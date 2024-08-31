@@ -1,0 +1,119 @@
+* {
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #6bffce; 
+   margin: 10px 0px;
+}
+/*grid*/
+.container {
+   display: grid;
+   gap: 10px;
+}
+
+/*Estiliza barra de menu*/
+.menu {
+   grid-column-start: 1;
+   grid-column-end: 10;
+   justify-content: center;
+   background-color: black;
+   border-radius: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+ul {
+   list-style-type: none;
+}
+
+li {
+   float: left;  
+}
+
+/*Estiliza os links*/
+li a {
+   text-decoration: none;
+   width: 100px;
+   padding: 15px;
+   margin: 20px;
+   color: white;
+   text-align: center;
+}
+
+li a:hover {
+   background-color: #333333;
+}
+
+/*Estiliza a parte do cabeçalho*/
+header {
+   grid-column-start: 4;
+   grid-column-end: 7;
+   justify-content: center;
+   background-color: #3df429;
+   margin-top: 20px;
+   border-radius: 30px;
+   border-top: 10px solid #088000;
+   border-bottom: 10px solid #088000;
+}
+
+/*Estiliza o título do cabeçalho*/
+.titulo {
+   width: 300px;
+   height: 100px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 50px;  
+}
+/*Estiliza a parte principal do conteúdo*/
+section {
+   grid-column-start: 1;
+   grid-column-end: 10;
+   padding: 15px 30px;
+   background-color: white;
+   margin-top: 20px;
+}
+
+/*Estiliza o formúlario da página contato*/
+th, td {
+   text-align: left;
+   padding: 10px;
+}
+
+.botao{
+   background-color: #6bffce;
+   border: 1px solid #12d9cc;
+   width: 80px;
+   height: 40px;
+}
+.botao:hover {
+   background-color: #0fefff;
+}
+
+/*Estiliza rodapé*/
+footer {
+   background-color: white;
+   padding: 20px;
+   
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+/*media query para ajustar menu em telas com max 600px*/
+@media screen and (max-width: 600px) {
+   div {
+      grid-column-start: 1;
+      grid-column-end:1;
+   }
+   
+   li a {
+      padding: 5px;
+      margin: 3px;
+      width: 50px;
+      font-size: 12px; 
+   }
+}
+
